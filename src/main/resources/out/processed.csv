@@ -1,0 +1,128 @@
+index,sex,years,children,smoke,countryFrom,countryNow,abroad,countryAbroad,degree,bachelorArea,bachelorEnjoy,bachelorWork,bachelorWorkEnjoy,hobbyOften,hobbyEnjoy,hobbyTime,hOutdoors,hSports,hStayHome,hVideogames,hJustMe,hWithFriends,hMall,hPet,hStudy,hParty,hNetflix,hFamily
+1,Fem,22,No,Yes,Mexico,Mexico,Yes,Germany,3,Engineering and Technology,7,Yes,8,3 week,9,Enough,0,0,1,0,1,1,1,0,0,0,1,0
+2,Male,25,No,No,Mexico,Mexico,No,,3,Computer Science and IT,8,Yes,6,2 week,9,Enough,0,0,0,1,1,1,0,0,0,0,0,0
+3,Fem,26,No,Yes,Mexico,Mexico,No,,4,Arts Design and Architecture,9,Yes,10,2 week,8,Need more,0,0,0,0,0,1,0,0,0,1,1,0
+4,Male,19,No,Not now,Mexico,Mexico,No,,2,,,,,3 week,8,Enough,0,1,1,1,0,1,1,0,0,1,0,0
+5,Fem,57,No,No,Mexico,Mexico,No,,4,Applied Sciences,9,Yes,9,3 week,10,Need more,0,0,1,0,0,0,0,0,0,0,0,0
+6,Fem,30,No,No,Mexico,USA,No,,3,Computer Science and IT,8,Yes,9,2 month,8,Need more,1,0,0,0,0,1,0,0,0,1,0,0
+7,Fem,22,No,Not now,Mexico,Mexico,Yes,Sweden,3,Computer Science and IT,8,Yes,9,3 week,10,Enough,1,1,0,1,0,0,0,0,0,0,0,0
+8,Fem,24,No,No,Mexico,Mexico,No,,3,Humanities,5,No,,3 week,10,Enough,0,0,0,1,0,1,0,1,0,0,0,0
+9,Male,29,No,No,Mexico,Mexico,No,,5,Computer Science and IT,9,Yes,10,3 week,10,Enough,1,1,0,1,0,0,0,0,0,0,0,0
+10,Fem,25,No,Not now,Mexico,Mexico,No,,3,Arts Design and Architecture,9,Yes,9,3 week,9,Enough,0,0,1,0,0,1,0,1,0,0,0,0
+11,Fem,22,No,No,Mexico,Mexico,No,,3,Business and Management,10,Yes,5,2 week,10,Need more,0,0,1,1,1,1,1,1,0,0,0,0
+12,Fem,22,No,No,Mexico,Mexico,No,,3,Arts Design and Architecture,10,Yes,10,3 week,10,Need more,0,0,0,1,0,1,0,1,0,0,0,0
+13,Fem,25,No,Not now,Mexico,Mexico,No,,4,Arts Design and Architecture,10,Yes,8,3 week,10,Need more,1,0,0,0,0,1,0,1,0,0,0,0
+14,Male,58,Yes,No,Mexico,Mexico,No,,3,Business and Management,9,Yes,9,2 week,9,Enough,0,1,1,0,0,1,0,0,0,0,0,0
+15,Fem,28,No,Yes,Mexico,Mexico,No,,3,Engineering and Technology,8,No,,3 week,9,Need more,0,0,0,1,0,1,0,1,0,0,0,0
+16,Fem,34,No,No,Mexico,Mexico,No,,3,Computer Science and IT,6,Yes,9,3 week,10,Need more,0,1,1,0,0,1,0,0,0,0,0,0
+17,Fem,24,No,No,Mexico,Mexico,No,,3,Social Sciences,8,No but have,8,2 month,9,Enough,0,0,1,1,1,1,0,0,0,0,0,0
+18,Male,27,No,No,Mexico,Mexico,No,,3,Engineering and Technology,8,Yes,9,3 week,9,Enough,0,1,1,1,0,0,0,0,0,0,0,0
+19,Fem,26,No,No,Mexico,Mexico,No,,3,Journalism and Media,8,No but else,,2 week,8,Need more,1,1,1,0,0,0,0,0,0,0,0,0
+20,Fem,27,No,Not now,Mexico,Mexico,No,,2,,,,,1 month,10,Need more,0,0,1,1,0,0,0,0,0,1,0,0
+21,Fem,32,No,Yes,Mexico,Mexico,Yes,UK,3,Humanities,8,No,,3 week,10,Enough,0,0,1,0,1,1,0,0,0,0,0,0
+22,Fem,21,No,Not now,Mexico,Mexico,Yes,Sweden,3,Arts Design and Architecture,6,Yes,10,3 week,10,Enough,1,0,0,1,0,0,0,0,0,0,0,0
+23,Male,30,No,Yes,Mexico,Mexico,No,,3,Arts Design and Architecture,9,No but else,,3 week,10,Enough,1,1,1,1,0,1,0,0,0,0,0,0
+24,Male,22,No,Not now,Mexico,Mexico,No,,3,Computer Science and IT,7,Yes,7,3 week,10,Need more,1,0,0,1,0,0,0,0,0,0,0,0
+25,Fem,19,No,No,Colombia,Colombia,No,,3,Arts Design and Architecture,9,No,,3 week,7,Need more,0,1,1,1,1,1,0,1,1,1,0,0
+26,Male,25,No,No,Mexico,Mexico,No,,3,Engineering and Technology,9,Yes,9,3 week,10,Need more,0,1,0,1,0,1,0,0,0,0,0,0
+27,Fem,30,No,No,Mexico,Mexico,No,,3,Social Sciences,9,No but else,8,2 month,9,Need more,1,0,0,0,0,1,1,0,0,0,0,0
+28,Male,29,No,No,Mexico,Mexico,No,,3,Engineering and Technology,10,Yes,10,2 week,10,Enough,1,1,0,1,0,0,0,0,0,0,0,0
+29,Fem,24,No,No,Peru,Peru,No,,2,,,,,3 week,10,Enough,0,0,0,1,0,0,0,0,0,0,0,0
+30,Male,23,No,No,Thailand,Thailand,Yes,Germany,3,Computer Science and IT,5,Yes,3,3 week,10,Need more,0,0,1,1,0,0,0,0,0,0,0,0
+31,Male,23,No,No,Thailand,Thailand,Yes,Germany,3,Computer Science and IT,7,Yes,6,2 week,10,Need more,1,1,1,1,0,1,1,0,0,0,0,0
+32,Fem,25,No,No,Mexico,Mexico,No,,3,Medicine and Health,6,No,,1 month,6,Need more,0,1,1,0,1,1,0,1,0,1,0,0
+33,Fem,29,No,No,Mexico,Mexico,No,,3,Social Sciences,10,Yes,10,2 month,10,Enough,1,0,0,1,0,1,0,0,0,0,0,0
+34,Fem,28,No,Not now,Mexico,Mexico,No,,3,Law,5,No but have,5,2 week,9,Need more,0,0,1,0,0,1,0,1,0,0,0,0
+35,Fem,54,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,10,Yes,9,3 week,10,Enough,0,0,1,0,0,1,0,0,0,0,0,0
+36,Male,28,No,No,Mexico,Mexico,Yes,UK,4,Computer Science and IT,8,Yes,8,3 week,10,Enough,0,0,1,1,1,1,1,1,1,0,0,0
+37,Fem,24,No,No,Mexico,Mexico,Yes,Germany,3,Engineering and Technology,7,No but else,,2 week,10,Enough,1,1,0,0,0,0,0,0,1,0,0,0
+38,Male,35,Yes,No,Mexico,Mexico,No,,4,Computer Science and IT,8,Yes,8,2 week,9,Enough,0,0,1,0,1,1,0,0,0,0,0,0
+39,Fem,26,No,No,Mexico,Mexico,No,Mexico,3,Engineering and Technology,8,No but else,10,3 week,10,Enough,0,0,0,1,0,1,0,1,0,0,0,0
+40,Male,25,No,Yes,Mexico,Mexico,Yes,Germany,3,Engineering and Technology,10,Yes,10,1 month,10,Need more,1,1,1,0,0,1,0,0,0,0,0,0
+41,Male,38,Yes,No,Mexico,Mexico,No,,3,Computer Science and IT,6,Yes,10,Tanto como pueda tiempo de calidad,10,Need more,0,0,1,1,1,0,0,0,0,0,0,1
+42,Fem,25,No,Yes,USA,USA,Yes,Mexico,2,,,,,1 month,8,Enough,1,1,0,0,0,0,0,1,0,0,0,0
+43,Male,24,No,No,Mexico,Mexico,Yes,Germany,3,Engineering and Technology,5,Yes,6,1 month,8,Need more,0,1,0,1,0,0,0,0,0,1,0,0
+44,Fem,24,No,No,Hungary,Hungary,Yes,Germany,4,Applied Sciences,10,Yes,8,3 week,10,Need more,0,1,0,0,0,1,0,0,0,0,0,0
+45,Male,45,Yes,Yes,Mexico,Mexico,No,,1,,,,,2 week,10,Need more,0,1,0,0,0,0,0,0,0,0,0,0
+46,Fem,25,No,Yes,Italy,Italy,Yes,Germany,4,Arts Design and Architecture,8,No,,2 week,9,Need more,0,0,1,0,0,0,0,0,1,1,0,0
+47,Fem,26,Yes,Yes,Mexico,Mexico,No,,4,Education and Training,10,Yes,10,3 week,10,Enough,0,0,0,0,0,0,0,1,0,0,0,1
+48,Male,30,Yes,Yes,Mexico,Mexico,No,,2,,,,,2 month,9,Need more,0,1,0,1,0,0,0,0,0,1,0,0
+49,Fem,25,No,No,S.Korea,S.Korea,Yes,Germany,3,Humanities,8,No but have,6,2 week,9,Need more,1,0,0,0,0,1,1,0,0,0,0,0
+50,Fem,49,Yes,No,Mexico,Mexico,No,,1,,,,,2 week,9,Need more,1,0,0,0,0,1,1,0,0,1,0,0
+51,Male,22,No,Yes,Vietnam,Finland,Yes,Finland,3,Computer Science and IT,6,Yes,4,3 week,9,Need more,0,0,1,1,0,1,0,0,0,0,0,0
+52,Fem,10,No,Not now,Mexico,Mexico,No,,2,,,,,1 month,10,Enough,0,1,0,0,0,1,1,0,0,0,0,0
+53,Fem,16,No,No,Spain,Spain,No,,2,,,,,2 week,10,Enough,0,1,0,1,0,1,0,0,0,0,0,0
+54,Fem,16,No,No,Mexico,Mexico,Yes,USA,2,,,,,Todos los dias,10,Enough,0,0,1,1,1,0,0,0,0,0,0,0
+55,Fem,24,No,No,Spain,Spain,No,,3,Medicine and Health,10,Yes,10,3 week,10,Enough,0,1,0,1,0,0,0,1,0,0,0,0
+56,Fem,39,Yes,No,USA,USA,No,,2,,,,,2 week,5,Enough,0,1,1,0,1,0,0,0,0,0,0,0
+57,Male,24,No,No,Colombia,Sweden,Yes,Mexico,3,Business and Management,7,Yes,8,3 week,8,Need more,0,0,0,1,0,1,0,0,0,1,0,0
+58,Fem,27,No,No,Germany,Germany,No,,3,Applied Sciences,3,No but else,6,2 week,10,Need more,0,0,1,0,1,0,0,0,0,0,0,0
+59,Fem,32,No,No,Germany,Germany,Yes,USA,4,Humanities,8,No but have,,2 week,8,Enough,1,0,1,0,0,1,0,0,0,0,0,0
+60,Fem,14,No,No,Spain,Spain,Yes,UK,1,,,,,3 week,8,Need more,0,0,1,1,1,0,0,0,0,0,0,0
+61,Fem,50,Yes,No,Mexico,Mexico,No,,1,,,,,2 week,10,Enough,0,0,1,0,0,0,0,0,0,1,0,0
+62,Fem,45,Yes,No,Mexico,Mexico,No,,2,,,,,3 week,7,Enough,0,0,1,0,1,0,0,1,0,0,0,0
+63,Fem,45,Yes,No,Mexico,Mexico,No,,2,,,,,1 month,10,Need more,0,0,1,0,0,1,0,1,0,0,0,0
+64,Fem,44,Yes,No,Mexico,Mexico,No,,3,Business and Management,10,No but have,10,3 week,10,Need more,1,0,1,0,0,0,1,0,0,0,0,0
+65,Fem,56,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,8,Yes,10,2 month,9,Need more,0,1,0,0,0,1,0,0,0,0,0,0
+66,Male,23,No,No,Mexico,Mexico,Yes,Germany,4,Engineering and Technology,10,Yes,8,2 week,9,Need more,0,0,1,1,0,0,1,0,0,0,0,0
+67,Fem,35,No,No,Mexico,Mexico,No,,3,Applied Sciences,10,Yes,10,2 week,10,Enough,0,0,1,0,0,0,0,0,0,1,0,0
+68,Fem,45,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,4,Yes,9,1 month,10,Need more,0,0,1,0,1,1,1,0,0,0,0,0
+69,Male,51,Yes,No,Mexico,Mexico,No,,3,Business and Management,10,No,,2 week,10,Enough,0,1,1,0,0,1,0,0,0,0,0,0
+70,Fem,53,Yes,No,Mexico,Mexico,No,,3,Business and Management,10,No,,1 month,10,Need more,0,1,1,0,0,1,1,0,0,0,0,0
+71,Fem,43,Yes,No,Mexico,Mexico,No,,1,,,,,3 week,10,Enough,0,1,1,0,1,1,1,0,0,1,0,0
+72,Male,39,Yes,Yes,Mexico,Mexico,No,,3,Business and Management,10,Yes,10,3 week,10,Enough,0,1,1,0,0,1,0,0,0,0,0,0
+73,Fem,49,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,8,No,,2 month,8,Enough,1,1,1,0,1,1,1,0,0,0,0,0
+74,Fem,22,No,No,Mexico,Mexico,No,,2,,,,,2 week,9,Need more,0,0,1,0,1,0,0,0,0,0,0,0
+75,Fem,40,Yes,Yes,Mexico,Mexico,No,,3,Medicine and Health,5,No,,2 week,9,Enough,0,0,1,0,1,0,0,0,0,1,0,0
+76,Fem,36,Yes,Yes,Mexico,Mexico,No,,3,Medicine and Health,8,No but have,,2 week,10,Enough,0,0,1,0,0,1,0,0,0,1,0,0
+77,Male,28,No,No,Mexico,Mexico,No,,3,Computer Science and IT,9,Yes,8,2 week,10,Need more,1,0,1,1,0,0,0,0,0,0,0,0
+78,Fem,37,Yes,Yes,Mexico,Mexico,No,,3,Business and Management,5,No,,3 week,7,Enough,0,0,1,0,0,1,0,1,0,0,0,0
+79,Male,22,No,No,Mexico,Mexico,Yes,Spain,3,Engineering and Technology,10,Yes,10,3 week,10,Enough,0,1,0,0,0,1,0,0,1,0,0,0
+80,Male,39,Yes,No,Mexico,Mexico,No,,3,Engineering and Technology,10,No,,3 week,10,Enough,0,1,0,0,0,1,0,1,0,0,0,0
+81,Male,28,No,Yes,Mexico,Mexico,No,,3,Engineering and Technology,9,Yes,7,2 week,8,Need more,0,0,1,1,0,0,0,0,0,0,0,0
+82,Fem,46,Yes,Yes,Mexico,Mexico,No,,3,Medicine and Health,10,Yes,10,2 week,10,Enough,1,0,1,0,0,0,0,0,0,0,0,1
+83,Male,36,Yes,No,Mexico,Mexico,No,,3,Engineering and Technology,8,No,1,1 month,10,Need more,0,1,1,0,0,0,0,1,0,0,0,0
+84,Fem,45,Yes,No,Mexico,Mexico,No,,1,,,,,3 week,10,Enough,0,0,1,0,0,0,1,0,0,1,0,0
+85,Fem,51,Yes,No,Mexico,USA,No,,1,,,,,Diario,10,Enough,0,0,1,1,0,0,0,0,0,0,0,0
+86,Fem,35,No,No,Mexico,Mexico,Yes,USA,4,Engineering and Technology,8,No,8,3 week,9,Enough,0,1,1,0,0,1,1,1,0,0,0,0
+87,Fem,55,Yes,No,Mexico,Mexico,No,,3,Social Sciences,10,Yes,10,2 month,10,Need more,1,0,0,0,0,1,0,1,0,0,0,0
+88,Fem,41,Yes,Yes,Mexico,Mexico,No,,2,,,,,2 month,1,Enough,0,0,1,0,0,1,1,0,0,0,0,0
+89,Fem,46,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,10,No but else,9,2 week,9,Enough,0,0,1,0,0,1,0,1,0,0,0,0
+90,Fem,54,Yes,Yes,Mexico,Mexico,No,,1,,,,,2 week,10,Enough,0,1,1,0,0,0,1,0,0,0,0,0
+91,Fem,41,Yes,No,Mexico,Mexico,No,,1,,,,,3 week,8,Enough,0,0,1,0,0,1,0,0,0,1,0,0
+92,Fem,26,Yes,Yes,Mexico,Mexico,No,,3,Arts Design and Architecture,8,No,1,3 week,7,Enough,0,0,1,1,0,0,0,0,0,0,0,0
+93,Fem,54,Yes,No,Mexico,Mexico,No,,3,Education and Training,8,Yes,10,1 month,9,Need more,1,0,0,0,0,1,0,0,0,1,0,0
+94,Fem,27,Yes,No,Mexico,Mexico,No,,2,,,,,1 month,9,Need more,0,0,1,1,0,1,1,0,0,1,0,0
+95,Fem,26,No,No,Germany,Germany,Yes,Argentina,4,Natural Sciences and Mathematics,7,Yes,10,2 month,10,Enough,1,0,0,0,0,1,0,1,0,0,0,0
+96,Fem,31,Yes,Not now,Mexico,Mexico,No,,2,,,,,2 week,8,Need more,1,0,1,0,0,0,1,1,0,1,0,0
+97,Fem,41,Yes,Yes,Mexico,Mexico,No,,2,,,,,1 month,10,Need more,0,0,1,1,0,1,0,0,0,0,0,0
+98,Fem,33,Yes,Yes,Mexico,Mexico,No,,3,Business and Management,8,Yes,8,2 week,8,Enough,0,0,1,0,0,1,0,1,0,1,0,0
+99,Fem,33,Yes,No,Mexico,Mexico,No,,2,,,,,2 week,8,Need more,1,0,1,0,0,1,0,0,0,0,0,0
+100,Fem,43,Yes,No,Mexico,Mexico,No,,2,,,,,3 week,10,Need more,1,0,1,0,0,0,1,0,0,0,0,0
+101,Fem,65,Yes,No,Mexico,Mexico,No,,2,,,,,1 month,10,Enough,1,0,1,0,0,0,1,0,0,0,0,0
+102,Male,22,No,No,Mexico,Mexico,Yes,Spain,3,Engineering and Technology,10,Yes,10,3 week,10,Enough,0,1,0,0,0,1,0,0,1,0,0,0
+103,Male,34,Yes,Not now,Mexico,Mexico,No,,1,,,,,3 week,9,Enough,0,1,0,0,0,1,0,0,0,1,0,0
+104,Fem,23,Yes,Yes,Mexico,Mexico,No,,3,Business and Management,10,Yes,10,3 week,10,Enough,0,0,0,0,1,0,0,0,0,1,0,0
+105,Fem,24,No,No,Spain,Spain,Yes,France,3,Engineering and Technology,6,Yes,8,2 week,8,Need more,1,1,1,0,1,1,0,0,0,1,0,0
+106,Male,40,No,No,Mexico,Mexico,No,,5,Natural Sciences and Mathematics,9,Yes,9,2 week,8,Enough,1,0,1,0,0,1,0,0,0,0,0,0
+107,Fem,48,No,Not now,Mexico,Mexico,Yes,UK,3,Journalism and Media,9,No but have,,3 week,10,Enough,1,1,1,1,1,1,0,0,1,1,0,0
+108,Male,44,Yes,No,Mexico,Mexico,No,,4,Engineering and Technology,8,No,,3 week,10,Enough,0,1,1,0,1,0,0,0,0,0,0,0
+109,Male,22,No,No,Mexico,Mexico,Yes,Sweden,3,Computer Science and IT,5,Yes,4,3 week,6,Need more,1,0,1,1,1,1,1,0,1,0,0,0
+110,Fem,23,No,No,Mexico,Mexico,No,,3,Engineering and Technology,7,No but else,,3 week,10,Enough,0,0,1,1,0,1,0,0,0,0,0,0
+111,Male,21,No,Not now,Mexico,Mexico,No,,3,Computer Science and IT,9,Yes,8,3 week,8,Need more,0,0,1,1,1,0,0,0,0,0,0,0
+112,Fem,22,No,No,Mexico,Mexico,No,,3,Arts Design and Architecture,7,No but have,5,2 week,10,Need more,0,0,1,0,0,1,0,1,0,0,0,0
+113,Fem,22,No,No,Mexico,Mexico,Yes,Germany,3,Engineering and Technology,10,No but have,7,3 week,9,Need more,0,1,0,0,0,1,0,0,1,0,0,0
+114,Fem,22,No,Yes,Mexico,Mexico,No,,2,,,,,3 week,9,Enough,0,0,1,0,1,1,0,0,0,0,0,0
+115,Fem,22,No,No,Mexico,Mexico,No,,3,Medicine and Health,8,No,,3 week,5,Need more,1,0,1,0,1,0,0,0,0,0,0,0
+116,Fem,54,Yes,Yes,Mexico,Mexico,No,,1,,,,,2 week,10,Need more,0,1,1,0,0,0,1,0,0,0,0,0
+117,Male,23,No,No,Mexico,Mexico,No,,3,Computer Science and IT,10,Yes,10,3 week,8,Need more,0,1,1,0,0,1,0,0,0,0,0,0
+118,Fem,50,Yes,No,Mexico,Mexico,No,Mexico,1,,,,,2 week,10,Enough,0,0,0,0,0,0,0,0,0,1,0,0
+119,Fem,54,Yes,Yes,Mexico,Mexico,No,,2,,,,,2 week,10,Need more,0,1,1,0,0,0,1,0,0,0,0,0
+120,Male,26,No,No,Mexico,Mexico,No,,2,,,,,2 week,6,Enough,0,0,0,0,0,1,0,0,0,1,0,0
+121,Male,25,Yes,Not now,Mexico,Mexico,No,,2,,,,,2 week,8,Enough,1,0,0,0,0,1,0,0,0,1,0,0
+122,Fem,42,Yes,No,Mexico,Mexico,No,,2,,,,,3 week,9,Enough,0,0,1,0,0,0,1,0,0,1,0,0
+123,Fem,21,No,Not now,Mexico,Mexico,No,,3,Engineering and Technology,7,Yes,7,2 week,9,Need more,0,1,1,0,0,1,0,0,0,0,0,0
+124,Fem,12,No,No,Mexico,Mexico,No,,1,,,,,3 week,9,Need more,0,1,0,1,0,1,0,0,0,0,0,0
+125,Male,22,No,Yes,Mexico,Mexico,No,,2,,,,,3 week,10,Enough,0,0,1,1,1,0,0,0,0,0,0,0
+126,Fem,23,No,No,TheNetherlands,TheNetherlands,Yes,Sweden,4,Natural Sciences and Mathematics,9,Yes,8,3 week,9,Enough,0,0,0,1,0,1,0,0,0,0,0,0
+127,Fem,47,Yes,No,Mexico,Mexico,No,,3,Medicine and Health,10,Yes,10,3 week,10,Enough,0,0,1,0,1,0,0,1,0,0,0,0

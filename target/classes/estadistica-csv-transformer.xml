@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <flow name="estadistica-csv-transformerFlow">
+        <file:inbound-endpoint path="${file.input.path}"  moveToDirectory="${file.output.path}" connector-ref="File" responseTimeout="10000" doc:name="File" encoding="UTF-8" mimeType="application/csv">
+            <file:filename-regex-filter pattern="${file.input.pattern}" caseSensitive="false"/>
+        </file:inbound-endpoint>
+        <dw:transform-message doc:name="Transform Message" metadata:id="e081a6f6-c246-486e-9be2-ea1c45ea6d66">
+            <dw:input-payload doc:sample="/Users/alexandra.martinez/Downloads/Final project survey (Responses).csv" mimeType="application/csv"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/csv
+---
+payload map ((p , index) -> {
+	index: index+1,
+	sex: p."What is your sex? (don't mean to offend) // Cual es tu sexo? (Sin ofender)",
+	years: p."How old are you? (Just write the number of years) // Cuantos anios tienes? (Solo escribe el número de anios)",
+	children: p."Do you have any children? // Tienes hijos? ",
+	smoke: p."Do you smoke? // Fumas? "
+		replace "Not right now, but I have // No ahora, pero lo he hecho"
+			with "Not now",
+	countryFrom: p."Where are you from? (Country) // De donde eres? (Pais)"
+		replace " "
+			with "",
+	countryNow: p."Where do you live now? (Country) // Donde vives ahora? (Pais)"
+		replace " "
+			with "",
+	abroad: p."Have you studied abroad? // Has estudiado en el extranjero?",
+	countryAbroad: p."If you answered 'yes' before, write the country where you studied. // Si seleccionaste que si en la pregunta anterior, escribe en que pais estudiaste."
+		replace " "
+			with "",
+	degree: p."What is your latest degree? (Even if you just started) // Cual es tu último grado de estudios? (Incluso si acabas de empezarlo)"
+		replace "Less than high school // Secundaria o menor"
+			with "1"
+		replace "High School // Preparatoria"
+			with "2"
+		replace "Bachelor // Licenciatura"
+			with "3"
+		replace "Masters // Maestria"
+			with "4"
+		replace "PhD // Doctorado"
+			with "5",
+	bachelorArea: p."What is your Bachelor's degree area? // Cual es el area de tus estudios de Licenciatura?"
+		replace "Agriculture and Forestry // Agricultura y Forestal"
+			with "Agriculture and Forestry"
+		replace "Applied Sciences // Ciencias aplicadas"
+			with "Applied Sciences"
+		replace "Arts, Design and Architecture // Artes, Disenio y Arquitectura"
+			with "Arts Design and Architecture"
+		replace "Business and Management // Negocios y Administracion"
+			with "Business and Management"
+		replace "Computer Science and IT // Ciencias de la computacion y TI"
+			with "Computer Science and IT"
+		replace "Education and Training // Educacion y Entrenamiento"
+			with "Education and Training"
+		replace "Engineering and Technology // Ingenieria y Tecnologia"
+			with "Engineering and Technology"
+		replace "Environmental Studies and Earth Sciences // Estudios Ambientales y Ciencias de la Tierra"
+			with "Environmental Studies and Earth Sciences"
+		replace "Hospitality and Sports // Hospitalidad y Deporte"
+			with "Hospitality and Sports"
+		replace "Humanities // Humanidades"
+			with "Humanities"
+		replace "Journalism and Media // Periodismo y Medios de Comunicacion"
+			with "Journalism and Media"
+		replace "Law // Leyes"
+			with "Law"
+		replace "Medicine and Health // Medicina y Salud"
+			with "Medicine and Health"
+		replace "Natural Sciences and Mathematics // Ciencias Naturales y Matematicas"
+			with "Natural Sciences and Mathematics"
+		replace "Social Sciences // Ciencias Sociales"
+			with "Social Sciences",
+	bachelorEnjoy: p."From 1 to 10, how much did you enjoy your Bachelor's studies? // Del 1 al 10, cuanto disfrutaste tus estudios de Licenciatura?",
+	bachelorWork: p."Do you currently work on something related to your Bachelor's studies? // Actualmente trabajas en algo relacionado con tus estudios de licenciatura?"
+		replace "No, but I have // No, pero si he trabajado"
+			with "No but have"
+		replace "No, but I work on something else // No, pero trabajo en algo mas"
+			with "No but else",
+	bachelorWorkEnjoy: p."If previous answer was 'yes', how much do you enjoy working there? // Si la respuesta anterior fue si, cuanto disfrutas trabajar ahi?",
+	hobbyOften: p."About your favorite hobby, how often do you practice it? // De tu pasatiempo favorito, que tan seguido lo practicas? "
+		replace "3 or more times a week // 3 veces o mas a la semana"
+			with "3 week"
+		replace "Once or twice a week // una o dos veces a la semana"
+			with "2 week"
+		replace "Twice a month // dos veces al mes"
+			with "2 month"
+		replace "Once a month // una vez al mes"
+			with "1 month",
+	hobbyEnjoy: p."About your favorite hobby, how much do you enjoy it? // De tu pasatiempo favorito, que tanto lo disfrutas? ",
+	hobbyTime: p."Do you consider that you don't have enough time to practice your favorite hobby? // Consideras que no tienes el tiempo suficiente para practicar tu pasatiempo favorito?"
+		replace "Yes, I need more time // Si,  necesito mas tiempo"
+			with "Need more"
+		replace "No, it's enough // No, asi es suficiente"
+			with "Enough",
+	hOutdoors: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Outdoors"
+		otherwise "0",
+	hSports: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Sports"
+		otherwise "0",
+	hStayHome: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Stay at home"
+		otherwise "0",
+	hVideogames: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Videogames"
+		otherwise "0",
+	hJustMe: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Just me"
+		otherwise "0",
+	hWithFriends: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "With friends"
+		otherwise "0",
+	hMall: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Mall"
+		otherwise "0",
+	hPet: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Pet"
+		otherwise "0",
+	hStudy: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Study"
+		otherwise "0",
+	hParty: "1"
+		when p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Party"
+		otherwise "0",
+	hNetflix: "1"
+		when (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Netflix")
+		or (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "netflix")
+		otherwise "0",
+	hFamily: "1"
+		when (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Family")
+		or (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "family")
+		or (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "Familia")
+		or (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "familia")
+		or (p."Think about your top 3 hobbies, select all that apply. // Piensa en tus 3 pasatiempos favoritos, selecciona todas las que apliquen. "
+			contains "hija")
+		otherwise "0"
+})
+]]></dw:set-payload>
+        </dw:transform-message>
+        <file:outbound-endpoint path="${file.output.path}" outputPattern="${file.output.name}" connector-ref="File" responseTimeout="10000" encoding="UTF-8" mimeType="application/csv" doc:name="File"/>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>
